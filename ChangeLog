@@ -1,68 +1,68 @@
 2005-03-28  MIYAMUKO Katsuyuki
 
-	* *mof-menu*: xyzzy 0.2.2.234 �ɂ��킹�ă��j���[�̍��ڂ�
-	�S�p�J�i�ɂ����B
+	* *mof-menu*: xyzzy 0.2.2.234 にあわせてメニューの項目を
+	全角カナにした。
 
 2004-12-25  MIYAMUKO Katsuyuki
 
-	* *mof-java-template*: �C���f���g�� 3 �ɂȂ��Ă����̂��C���B
+	* *mof-java-template*: インデントが 3 になっていたのを修正。
 
 2004-08-09  MIYAMUKO Katsuyuki
 
-	* �T�C�g�ړ]�ɔ������܂��܂Ƃ����C��
+	* サイト移転に伴うこまごまとした修正
 
 2004-07-14  MIYAMUKO Katsuyuki
 
-	* �G�X�P�[�v�V�[�P���X�̉��߂� \t �Ƃ��𖳎����Ă��������Ɖ��߂���悤�ɂ����B
+	* エスケープシーケンスの解釈で \t とかを無視していたちゃんと解釈するようにした。
 
 2004-07-13  MIYAMUKO Katsuyuki
 
-	* list-function �Ŕz��^�̃v���p�e�B�����Ă��Ȃ������̂��C���B
+	* list-function で配列型のプロパティが取れていなかったのを修正。
 
-	* mof-spell-check-string �ǉ�: �����̕����񂾂����X�y���`�F�b�N (ispell) ����B
+	* mof-spell-check-string 追加: 直下の文字列だけをスペルチェック (ispell) する。
 
-	* mof-spell-check-all-string �ǉ�: �����񂾂����X�y���`�F�b�N (ispell) ����B
+	* mof-spell-check-all-string 追加: 文字列だけをスペルチェック (ispell) する。
 
-	* �Ȃ�ƂȂ����j���[����{��ɂ����B
+	* なんとなくメニューを日本語にした。
 
 2004-06-08  MIYAMUKO Katsuyuki
 
 	* rename: mof-lookup-current-string -> mof-lookup-current-string0
 
-	* mof-lookup-current-string �ǉ�: ��������|�C���g����ƃG�X�P�[�v�V�[�P���X��
-	  ���ߍς݂̕�������|�b�v�A�b�v�\������
-	  (Description �̊m�F�ɗ��p����)�B
+	* mof-lookup-current-string 追加: 文字列をポイントするとエスケープシーケンスを
+	  解釈済みの文字列をポップアップ表示する
+	  (Description の確認に利用する)。
 
 2004-02-19  MIYAMUKO Katsuyuki
 
-	* bookmark �ǉ�
+	* bookmark 追加
 
 	* mof-current-string-output-to-buffer:
-	  �J�[�\�����̕�������o�b�t�@�ɏo�͂���
+	  カーソル下の文字列をバッファに出力する
 
 2004-01-11  MIYAMUKO Katsuyuki
 
 	* mof-list-current-class-function:
-	  ���݂̃N���X���� list-function ����B
+	  現在のクラスだけ list-function する。
 
 2004-01-09  MIYAMUKO Katsuyuki
 
 	* mof-kill-current-string:
-	  �J�[�\�����̕������ kill ring �ɓ����
+	  カーソル下の文字列を kill ring に入れる
 
 2003-12-22  MIYAMUKO Katsuyuki
 
 	* mof-close-string-and-newline:
-	  �����񒆂̉��s�Ńs���I�h�̌��ł��󔒂�}������悤�ɂ����B
+	  文字列中の改行でピリオドの後ろでも空白を挿入するようにした。
 
 2003-12-17  MIYAMUKO Katsuyuki
 
-	* mof-generate-java-constants: Values/ValueMap ���� Java �̒萔�錾�𐶐�����B
+	* mof-generate-java-constants: Values/ValueMap から Java の定数宣言を生成する。
 
 2003-12-09  MIYAMUKO Katsuyuki
 
 	* mof-in-method-p, calc-mof-indent:
-	  ���\�b�h�̈����� Qualifier ���������ꍇ�̃C���f���g���ς������̂��C���B
+	  メソッドの引数に Qualifier を書いた場合のインデントが変だったのを修正。
 
 	  before:
 	      uint32 Method([In]
@@ -78,89 +78,89 @@
 
 2003-11-19  MIYAMUKO Katsuyuki
 
-	* mof-make-command �� obsolute �ɂ��� mof-define-command ��ǉ��B
-	  ���łɃR�}���h���s�O�A���s��� hook �����s�ł���悤�ɂ����B
+	* mof-make-command を obsolute にして mof-define-command を追加。
+	  ついでにコマンド実行前、実行後に hook を実行できるようにした。
 
-	* �C���f���g�֘A��ǉ��B
-	  * �N���X�S�̂��C���f���g
-	  * �o�b�t�@�S�̂��C���f���g
-	  * ����f�B���N�g���� MOF �t�@�C���S�����C���f���g
+	* インデント関連を追加。
+	  * クラス全体をインデント
+	  * バッファ全体をインデント
+	  * あるディレクトリの MOF ファイル全部をインデント
 
 2003-11-09  MIYAMUKO Katsuyuki
 
-	* �P�ʂ� "Pounds" ���d�����Ă����B(CIM Spec ���d�����Ă���)
+	* 単位の "Pounds" が重複していた。(CIM Spec が重複している)
 
-	* mof-find-include-file �ŃJ�����g�f�B���N�g�����ŏ��ɒT���悤�ɂ����B
+	* mof-find-include-file でカレントディレクトリを最初に探すようにした。
 
-	* �O���R�}���h�����s�����Ƃ��ɁA�o�b�t�@�̐擪�Ɏ��s�R�}���h��\������悤�ɂ����B
+	* 外部コマンドを実行したときに、バッファの先頭に実行コマンドを表示するようにした。
 
 2003-10-26  MIYAMUKO Katsuyuki
 
-	* �P�ʂ̕⊮�� Units qualifier �̒��ł̂ݍs�����Ƃɂ����B
+	* 単位の補完は Units qualifier の中でのみ行うことにした。
 
 2003-10-16  MIYAMUKO Katsuyuki
 
-	* mof-build-summary-of-functions ���o�O���Ă����̂ŏC���B
+	* mof-build-summary-of-functions がバグっていたので修正。
 
 2003-10-15  MIYAMUKO Katsuyuki
 
-	* �R�����g�̃g�O���A���[�W�����̃R�����g�A�E�g�ȂǁB
+	* コメントのトグル、リージョンのコメントアウトなど。
 
-	* CIM Specification v2.2 Appendix C �Œ�`����Ă���u�P�ʁv
-	  �̕⊮�����j���[����̑}���B
+	* CIM Specification v2.2 Appendix C で定義されている「単位」
+	  の補完＆メニューからの挿入。
 
-	* Values �� ValueMap �̑Ή���\���B
+	* Values と ValueMap の対応を表示。
 
-	* ValueMap �̎��������B
+	* ValueMap の自動生成。
 
-	* �N���X�AQualifier�A�v���p�e�B�⃁�\�b�h�Ȃǂ� mark�B
+	* クラス、Qualifier、プロパティやメソッドなどの mark。
 
-	* �N���X�AQualifier�A�v���p�e�B�⃁�\�b�h�Ԃ̈ړ��B
+	* クラス、Qualifier、プロパティやメソッド間の移動。
 
 2003-10-12  MIYAMUKO Katsuyuki
 
-	* ���j���[��啝�����B
+	* メニューを大幅強化。
 
-	* ��������ӂŉ��s�����ꍇ�A����ɕ�����������J�n�����肷��B
+	* 文字列周辺で改行した場合、勝手に文字列を閉じたり開始したりする。
 
-	* CIM Schema v2.8 �Œǉ����ꂽ Qualifier (Exception) ���L�[���[�h�ɒǉ��B
+	* CIM Schema v2.8 で追加された Qualifier (Exception) をキーワードに追加。
 
-	* Qualifier �̃C���f���g���o�O���Ă��̂��C���B
+	* Qualifier のインデントがバグってたのを修正。
 
-	* include ���Ă���t�@�C�����J���B
+	* include しているファイルを開く。
 
-	* list-function �Ń��\�b�h��v���p�e�B�̕\���B
+	* list-function でメソッドやプロパティの表示。
 
-	* mof-make-command ���}�N������Ȃ��ĕ��ʂ̊֐��ɂ����B
-	  �Ƃ����킯�Ŏd�l�������ɂ�����Ă����܂���B
+	* mof-make-command をマクロじゃなくて普通の関数にした。
+	  というわけで仕様が微妙にかわってすいません。
 
-	* �f�t�H���g�̃C���f���g���� 3 �ɂ����B
-	  (CIM Schema v2.7 �܂� 4 �������� v2.8 ���� 3 �ɂȂ������ۂ��B
-	  mofpretty (http://www.dmtf.org/members/tools) ��
-	  3 �Ő��`����݂����B)
+	* デフォルトのインデント幅を 3 にした。
+	  (CIM Schema v2.7 まで 4 だったが v2.8 から 3 になったっぽい。
+	  mofpretty (http://www.dmtf.org/members/tools) も
+	  3 で整形するみたい。)
 
 2003-08-12  MIYAMUKO Katsuyuki
 
-	* ���j���[�����Ă݂��B
+	* メニューをつけてみた。
 
-	* ni-autoload �p�t�@�C��������ƒǉ��B
+	* ni-autoload 用ファイルをやっと追加。
 
 2003-04-13  MIYAMUKO Katsuyuki
 
-	* Fravor �̐F��ς���
+	* Fravor の色を変えた
 
-	* Qualifier �錾�̏I���ɃR�����g�������Ă��������C���f���g�ł���p�ɂ���
+	* Qualifier 宣言の終わりにコメントがあっても正しくインデントできる用にした
 
-	* �C���f���g������������
+	* インデント処理を見直し
 
-	* c-indent-level ����߂� *mof-indent-level* �𓱓�
+	* c-indent-level をやめて *mof-indent-level* を導入
 
-	* mof-qualifier-offset �� *mof-qualifier-offset* �ɕύX
+	* mof-qualifier-offset を *mof-qualifier-offset* に変更
 
 2003-03-08  MIYAMUKO Katsuyuki
 
-	* �h�L�������g�Ƃ����̑�������ɕύX
+	* ドキュメントとかその他を微妙に変更
 
 2003-03-06  MIYAMUKO Katsuyuki
 
-	* ���������[�X
+	* 初期リリース
